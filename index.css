@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://wallpaperaccess.com/full/2999001.png");
+  background-size: cover;
+}
+.container {
+  position: absolute;
+  display: flex;
+  width: 576px;
+  height: 800px;
+  /* background: url("https://i.pinimg.com/736x/6b/95/b1/6b95b1ec40138ab27a5e535570335386.jpg"); */
+  border-radius: 25px;
+  box-shadow: 1px 1px 10px;
+}
+.upperContainer {
+}
+.lowerContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 260px;
+  /* background-image: url("https://wallpaperaccess.com/full/715317.jpg"); */
+  /* background-size: 100% 100%; */
+  /* background-repeat: no-repeat; */
+  background-color: white;
+  opacity: 65%;
+  width: 100%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 540px;
+}
+.boxes {
+  margin-left: 35px;
+  margin-top: 25px;
+  width: 100px;
+  height: 80px;
+  border-radius: 17px;
+  cursor: pointer;
+  border-style: none;
+  font-weight: bold;
+}
+.boxes:hover {
+  box-shadow: 0px 0px 40px 1px gray;
+}
+.blackBoxes {
+color: white;
+background-color: black;
+}
+.blueBoxes {
+color: white;
+background-color: #2A528D;
+}
+.specialBox {
+    width: 235px;
+    border-radius: 50px;
+}
+.row {
+  display: flex;
+}
