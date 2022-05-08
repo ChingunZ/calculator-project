@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upperContainer">
+            <div class="answerContainer">
+                <div class="answerDisplay" id="previous"></div>
+                <div class="answerDisplay" id="current"></div>
+            </div>
+        </div>
+        <div class="lowerContainer">
+            <div class="row One">
+                <button id="AC" class="boxes blackBoxes"><span>AC</span></button>
+                <button id="number" class="boxes blackBoxes"><span>+/-</span></button>
+                <button id="CE" class="boxes blackBoxes"><span>CE</span></button>
+                <button id="operator" class="boxes blueBoxes"><span>÷</span></button>                
+            </div>
+            <div class="row Two">
+                <button id="number" class="boxes"><span>1</span></button>
+                <button id="number" class="boxes"><span>2</span></button>
+                <button id="number" class="boxes"><span>3</span></button>
+                <button id="operator" class="boxes blueBoxes"><span>×</span></button>
+            </div>
+            <div class="row Three">
+                <button id="number" class="boxes"><span>4</span></button>
+                <button id="number" class="boxes"><span>5</span></button>
+                <button id="number" class="boxes"><span>6</span></button>
+                <button id="operator" class="boxes blueBoxes"><span>-</span></button>
+            </div>
+            <div class="row Four">
+                <button id="number" class="boxes"><span>7</span></button>
+                <button id="number" class="boxes"><span>8</span></button>
+                <button id="number" class="boxes"><span>9</span></button>
+                <button id="operator" class="boxes blueBoxes"><span>+</span></button>
+            </div>
+            <div class="row Five">
+                <button id="number" class="boxes specialBox"><span>0</span></button>
+                <button id="number" class="boxes"><span>.</span></button>
+                <button id="equivalent" class="boxes blackBoxes"><span>=</span></button>
+            </div>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="./calculator.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBfYgq4e4Zn3cLY4qJP1361I3yQjj8sGao",
+          authDomain: "calculatorpj.firebaseapp.com",
+          projectId: "calculatorpj",
+          storageBucket: "calculatorpj.appspot.com",
+          messagingSenderId: "1040623417477",
+          appId: "1:1040623417477:web:52dc9181bd1bd4948311ec",
+          measurementId: "G-07SQHWVW3H"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
